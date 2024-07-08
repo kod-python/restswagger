@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nr)n)spg$%yxt-woytwiol2z)&#m+@@x5@(*p%bhw07u%@$+@b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1:8000', 'kodviper.pythonanywhere.com']
 
