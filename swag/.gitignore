@@ -1,1 +1,24 @@
-db.sqlite3
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment variables
+.env
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+/media
+
+# Virtual environments
+venv/
+env/
+
+# Others
+.DS_Store
+.idea/
+.vscode/
+
