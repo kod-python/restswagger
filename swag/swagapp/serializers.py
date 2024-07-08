@@ -13,14 +13,14 @@ class ProductSerializer(serializers.ModelSerializer):
          
          
          
-# class ProductImageSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Product
-#         fields = ['image'] 
-
-
-
-class ImageSerializer(serializers.ModelSerializer):
+class ProductImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = [ 'image', 'uploaded_at']
+        fields = ['image'] 
+
+
+
+# class ImageSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Product
+#         fields = [ 'image', 'uploaded_at']
