@@ -10,3 +10,17 @@ class ProductSerializer(serializers.ModelSerializer):
              request = self.context.get('request')
              photo_url = obj.fingerprint.url
              return request.build.absolute_uri(photo_url)
+         
+         
+         
+# class ProductImageSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Product
+#         fields = ['image'] 
+
+
+
+class ImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = [ 'image', 'uploaded_at']
