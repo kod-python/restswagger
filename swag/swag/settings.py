@@ -143,4 +143,40 @@ MEDIA_URL ='/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = True 
-# CORS_ORIGIN_WHITELIST = True
+# Allow specific origins
+CORS_ALLOWED_ORIGINS = [
+    'https://example.com',
+    'https://another-example.com',
+]
+
+# Allow specific methods
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+
+# Allow specific headers
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'x-csrftoken',
+]
+
+# Allow credentials
+CORS_ALLOW_CREDENTIALS = True
+
+# Allow all subdomains
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r'^https://.*\.example\.com$',  # Example for allowing subdomains of example.com
+]
+
+# Optionally, you can specify settings for the `Access-Control-Expose-Headers` header
+CORS_EXPOSE_HEADERS = [
+    'content-type',
+    'x-csrftoken',
+]
