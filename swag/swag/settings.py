@@ -129,10 +129,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'swag/static')
 ]
 
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'swagapp/static/media')
 MEDIA_URL ='/media/'
 
 
@@ -145,8 +146,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = True 
 # Allow specific origins
 CORS_ALLOWED_ORIGINS = [
-    'https://example.com',
-    'https://another-example.com',
+    
+     "http://localhost:8000",
+    #  "http://localhost:8000/api/products/"
+  
 ]
 
 # Allow specific methods
